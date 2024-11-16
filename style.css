@@ -1,0 +1,173 @@
+/* ------------- Se realiza la vista de los dispositivo móviles ------------- */
+:root {
+  --color-impar: #076492aa;
+}
+
+* {
+  font-family: sans-serif;
+}
+/* --------------------------------- header --------------------------------- */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0% 4vw;
+}
+/* ---------------------------------- hero ---------------------------------- */
+#hero {
+  background-image: url("./asset/img/banner.jpg");
+  border-bottom-right-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .foto-portafolio {
+    max-width: 100%;
+    height: 25vh;
+    border-radius: 5px;
+    img {
+      padding: 10px;
+      width: 20vh;
+      border-radius: 50%;
+    }
+  }
+  .minima-description,
+  .redes-sociales {
+    background-color: white;
+    height: 100%;
+    padding: 1rem;
+  }
+  .redes-sociales ul {
+    padding-inline-start: 0.2vw;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    li {
+      list-style-type: none;
+    }
+    li a {
+      text-decoration: none;
+      color: #000;
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      img {
+        width: 2vh;
+      }
+    }
+  }
+}
+
+/* -------------------------------- Sobre mi -------------------------------- */
+#sobre-mi {
+  background-color: var(--color-impar);
+  padding: 1rem;
+  color: #fff;
+}
+/* ---------------------------------- Skills --------------------------------- */
+
+#Area-skills {
+  .skill {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    figure {
+      width: 90px;
+      text-align: center;
+    }
+  }
+}
+/* ---------------------------------- Hobby --------------------------------- */
+#Area-hobbies {
+  background-color: var(--color-impar);
+  color: white;
+  padding: 1rem;
+  .hobby {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    figure {
+      background-color: #fff;
+      border-radius: 5px;
+      font-size: 10px;
+      text-align: center;
+      width: 90px;
+      color: #000;
+      img {
+        width: 95px;
+      }
+    }
+  }
+}
+
+/* --------------------------- formation academic --------------------------- */
+
+#formations-academics {
+  .academic {
+    figure {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      #sena {
+        width: 150px;
+      }
+      #one-aula {
+        width: 300px;
+      }
+    }
+  }
+}
+
+/* ------------------------------ contactar-me ----------------------------- */
+
+#contactar-me {
+  background: #484e5130;
+  padding: 1ex;
+  fieldset {
+    background-color: var(--color-impar);
+    border: none;
+    border-radius: 15px;
+    height: 600px;
+    form {
+      margin: 0px 10%;
+      display: flex;
+      flex-flow: column wrap;
+      .inputs {
+        background-color: #fff;
+        border-radius: 10px;
+        display: flex;
+        flex-flow: column wrap;
+        font-weight: bold;
+        margin: 1.5ex 0px;
+        padding: 1ex;
+        input {
+          height: 4ex;
+          border: none;
+          border-bottom: 1px solid #000;
+        }
+        textarea {
+          resize: none;
+          height: 200px;
+        }
+      }
+    }
+    button {
+      margin: 0px 10%;
+      height: 2.5rem;
+      width: 8rem;
+      color: white;
+      background-color: #043e5a;
+      border: none;
+      border-radius: 5px;
+    }
+  }
+}
+
+/* --------------------------------- rodapé -------------------------------- */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  text-align: center;
+}
