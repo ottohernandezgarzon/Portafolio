@@ -13,7 +13,13 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 0% 4vw;
+  position: sticky;
+  top: 0.01px;
+  background-color: #fff;
+  padding: 0 5vb;
+  a {
+    text-decoration: none;
+  }
 }
 /* ---------------------------------- hero ---------------------------------- */
 #hero {
@@ -27,7 +33,7 @@ header {
     border-radius: 5px;
     img {
       padding: 10px;
-      width: 20vh;
+      width: 22vh;
       border-radius: 50%;
     }
   }
@@ -71,8 +77,9 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 0 5%;
     figure {
-      width: 90px;
+      width: 10vw;
       text-align: center;
     }
   }
@@ -91,10 +98,10 @@ header {
       border-radius: 5px;
       font-size: 10px;
       text-align: center;
-      width: 90px;
       color: #000;
+      width: 18vw;
       img {
-        width: 95px;
+        width: 15vw;
       }
     }
   }
@@ -143,7 +150,6 @@ header {
         input {
           height: 4ex;
           border: none;
-          border-bottom: 1px solid #000;
         }
         textarea {
           resize: none;
@@ -170,4 +176,70 @@ footer {
   align-items: center;
   padding: 5%;
   text-align: center;
+}
+
+/* ----------------------------- vista de tablet ---------------------------- */
+
+@media (750px <= width <= 1350px) {
+  #hero {
+    display: flex;
+    flex-flow: row wrap;
+    .foto-portafolio {
+      order: 2;
+      align-self: center;
+      img {
+        width: 12vw;
+      }
+    }
+    .minima-description {
+      background-color: transparent;
+      color: white;
+      width: 80%;
+      order: 1;
+    }
+    .redes-sociales {
+      order: 3;
+      width: 100%;
+      ul {
+        li a {
+          font-size: medium;
+          img {
+            width: 3vw;
+          }
+        }
+      }
+    }
+  }
+  #Area-skills {
+    .skill {
+      figure {
+        margin: 0 5%;
+        text-align: center;
+        img {
+          width: 10vw;
+        }
+      }
+    }
+  }
+  #Area-hobbies {
+    .skill {
+      display: flex;
+      flex-flow: row wrap;
+    }
+  }
+  #formations-academics {
+    .academic {
+      padding: 0% 10%;
+      display: flex;
+      figure {
+        display: flex;
+        flex-flow: column nowrap;
+      }
+    }
+  }
+  #contactar-me {
+    fieldset {
+      padding: 0 10%;
+    }
+  }
 }
