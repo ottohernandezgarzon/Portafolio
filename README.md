@@ -1,4 +1,4 @@
-Challenge-ONE-Front-End---Portafolio
+Portafolio
 ==
 
 [Pagina del portafolio](https://ottohernandezgarzon.github.io/Portafolio/)
